@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.fragment.SecondFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/firstnamelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/first_name_lable"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_alignBaseline="@+id/firstnamelbl"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/firstnamelbl"
+            android:text="@string/first_name"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/lastnamelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstnamelbl"
+            android:text="@string/last_name_label"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_alignBaseline="@+id/lastnamelbl"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstname"
+            android:layout_toRightOf="@+id/lastnamelbl"
+            android:text="@string/last_name"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/agelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastnamelbl"
+            android:text="@string/age_label"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_alignBaseline="@+id/agelbl"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastnamelbl"
+            android:layout_toRightOf="@+id/agelbl"
+            android:text="@string/age"
+            android:textSize="@dimen/text_size_large" />
+
+    </RelativeLayout>
+</LinearLayout>

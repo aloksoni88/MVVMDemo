@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.fragment.FirstFragment">
+
+    <EditText
+        android:id="@+id/edittext_firstname"
+        android:layout_width="@dimen/edittext_size"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name" />
+
+    <EditText
+        android:id="@+id/edittext_lastname"
+        android:layout_width="@dimen/edittext_size"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name" />
+
+    <EditText
+        android:id="@+id/edittext_dob"
+        android:layout_width="@dimen/edittext_size"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+        android:drawableRight="@android:drawable/ic_menu_my_calendar" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin"
+        android:text="@string/next"/>
+</LinearLayout>
